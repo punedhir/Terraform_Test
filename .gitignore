@@ -1,3 +1,6 @@
+# Swap Files
+*.swp*
+
 #  Local .terraform directories
 **/.terraform/*
 
