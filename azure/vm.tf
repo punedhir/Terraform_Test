@@ -96,7 +96,7 @@ resource "azurerm_virtual_machine_extension" "test" {
   depends_on = ["azurerm_virtual_machine.test"]
   settings = <<SETTINGS
   {
-    "fileUris" : ["https://raw.githubusercontent.com/punedhir/Terraform/master/azure/${var.puppetin}.sh"]
+    "fileUris" : ["https://raw.githubusercontent.com/punedhir/Terraform_Test/master/azure/${var.puppetin}.sh"]
   }
 SETTINGS
   protected_settings = <<PROTECTED_SETTINGS
