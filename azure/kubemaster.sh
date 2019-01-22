@@ -7,4 +7,9 @@ EOF
 apt-get update
 apt-get install -y kubelet kubeadm kubectl
 apt-mark hold kubelet kubeadm kubectl
+apt install docker.io
+systemctl start kubelet
+
+
+
 
