@@ -31,7 +31,7 @@ resource "azurerm_public_ip" "test" {
   name = "${var.name}-ip"
   resource_group_name = "${var.name}"
   location            = "${azurerm_resource_group.test.location}"
-  public_ip_address_allocation = "dynamic"
+  public_ip_address_allocation = "static"
   depends_on = ["azurerm_subnet.internal"]
 }
 
